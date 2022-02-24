@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- whole navbar -->
+            <div class="navbar">
+                <!-- navbar left side -->
+                <div class="navbar-left">
+                    <ul>
+                        <li class="nf_li">
+                            <img src="images/icon-more.png" alt="hamburger" style="width: 35px;">
+                        </li>
+                        <li class="nf_li">
+                            <img src="images/Luxury Veniam.png" alt="logo" style="width: 100px;">
+                        </li>
+                        <li class="nf_li">
+                            <input type="search" placeholder="Search For Product">
+                            <span class=""></span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar rigth side -->
+                <div class="navbar-right">
+                    <ul>
+                        <li class="nr_li">
+                            <img src="images/icon-perfect list.png" alt="like" style="width: 30px;">
+                        </li>
+                        <li class="nr_li">
+                            <img src="images/icon-cart.png" alt="cart" style="width: 30px;">
+                        </li>
+                        <li class="nr_li li-main">
+                            <img src="https://i.imgur.com/2QKIaJ5.png" alt="" style="width: 35px;">
+
+                            <div class="dd-menu">
+                                <ul>
+                                    <li>Profile</li>
+                                    <li>Dashboard</li>
+                                    <li>Dashboard</li>
+                                    <li>Dashboard</li>
+                                    <li>Logout</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+          var dd_main = document.querySelector(".li-main");
+
+                dd_main.addEventListener("click", function(){
+                this.classList.toggle("active");
+})
+        </script>
+    </body>
+</html>
